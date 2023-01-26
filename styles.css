@@ -1,0 +1,17 @@
+body {
+  margin: auto;
+  text-align: center;
+}
+
+.slideshow {
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+div img {
+  max-width: 50%;
+}
+
