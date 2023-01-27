@@ -10,10 +10,11 @@ body {
 
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
+
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -157,3 +158,95 @@ div img {
   border-radius: 20px;
 }
 
+#get-image-btn {
+  background-color: #c17c74;
+  color: #ede7e3;
+  padding: 15px 19px;
+  font-size: 24px;
+  font-weight: 500;
+  border: #ede7e3;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Slideshow */
+/* Next & previous buttons */
+#prev,
+#next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+#next {
+  right: 250px;
+  border-radius: 3px 0 0 3px;
+}
+
+#prev {
+  left: 250px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#prev:hover,
+#next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Modal */
+
+#meme-modal {
+  display: none;
+  position: fixed;
+  margin: auto;
+  top: 20px;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ede7e3;
+  border-radius: 5px;
+  width: 85%;
+  height: 85%;
+  background-color: #c17c74;
+}
+
+.meme-modal {
+  max-width: 340px;
+  max-height: 420px;
+  border-radius: 5px;
+}
+
+#meme-modal-close-btn {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#meme-modal-close-btn:hover {
+  color: white;
+  background-color: #bd301d;
+  border: 2px solid #bd301d;
+}
