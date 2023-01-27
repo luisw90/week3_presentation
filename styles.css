@@ -5,6 +5,7 @@ body {
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  background-color: #ADD7F6;
 }
 
 @keyframes fadeInAnimation {
@@ -15,6 +16,113 @@ body {
       opacity: 1;
   }
 }
+
+h1 {
+  background-color: rgba(256,256,256,.03);
+  
+  font-size: 2em;
+  font-family: 'Amethysta', serif;
+  text-align: center;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  white-space:nowrap;
+}
+
+span {
+  color: #000;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 2em;
+  vertical-align: middle;
+  letter-spacing: .2em;
+}
+
+.fire {
+  animation: animation 1s ease-in-out infinite alternate;
+  -moz-animation: animation 1s ease-in-out infinite alternate;
+  -webkit-animation: animation 1s ease-in-out infinite alternate;
+  -o-animation: animation 1s ease-in-out infinite alternate;
+}
+
+.burn {
+  animation: animation .65s ease-in-out infinite alternate;
+  -moz-animation: animation .65s ease-in-out infinite alternate;
+  -webkit-animation: animation .65s ease-in-out infinite alternate;
+  -o-animation: animation .65s ease-in-out infinite alternate;
+}
+
+@keyframes animation
+{
+  0% {text-shadow: 0 0 20px #f2f7fb,
+    10px -10px 30px #e2edf4,
+    -20px -20px 40px #aecef2,
+    20px -40px 50px #94b4d9,
+    -20px -60px 60px #3366ad,
+    0 -80px 70px #123587,
+    10px -90px 80px #271893;}
+  100% {text-shadow: 0 0 20px #f2f7fb,
+    10px -10px 30px #e2edf4,
+    -20px -20px 40px #aecef2,
+    20px -40px 50px #94b4d9,
+    -20px -60px 60px #3366ad,
+    0 -80px 70px #123587,
+    10px -90px 80px #271893;}
+  }
+
+@-moz-keyframes animation
+{
+  0% {text-shadow: 0 0 20px #f2f7fb,
+    10px -10px 30px #e2edf4,
+    -20px -20px 40px #aecef2,
+    20px -40px 50px #94b4d9,
+    -20px -60px 60px #3366ad,
+    0 -80px 70px #123587,
+    10px -90px 80px #271893;}
+  100% {text-shadow: 0 0 20px #f2f7fb,
+    10px -10px 30px #e2edf4,
+    -20px -20px 40px #aecef2,
+    20px -40px 50px #94b4d9,
+    -20px -60px 60px #3366ad,
+    0 -80px 70px #123587,
+    10px -90px 80px #271893;}
+  }
+
+@-webkit-keyframes animation
+{
+  0% {text-shadow: 0 0 20px #f2f7fb,
+    10px -10px 30px #e2edf4,
+    -20px -20px 40px #aecef2,
+    20px -40px 50px #94b4d9,
+    -20px -60px 60px #3366ad,
+    0 -80px 70px #123587,
+    10px -90px 80px #271893;}
+  100% {text-shadow: 0 0 20px #f2f7fb,
+    10px -10px 30px #e2edf4,
+    -20px -20px 40px #aecef2,
+    20px -40px 50px #94b4d9,
+    -20px -60px 60px #3366ad,
+    0 -80px 70px #123587,
+    10px -90px 80px #271893;}
+  }
+
+@-o-keyframes animation
+{
+  0% {text-shadow: 0 0 20px #f2f7fb,
+    10px -10px 30px #e2edf4,
+    -20px -20px 40px #aecef2,
+    20px -40px 50px #94b4d9,
+    -20px -60px 60px #3366ad,
+    0 -80px 70px #123587,
+    10px -90px 80px #271893;}
+  100% {text-shadow: 0 0 20px #f2f7fb,
+    10px -10px 30px #e2edf4,
+    -20px -20px 40px #aecef2,
+    20px -40px 50px #94b4d9,
+    -20px -60px 60px #3366ad,
+    0 -80px 70px #123587,
+    10px -90px 80px #271893;}
+  }
+
 
 .slideshow {
   position: relative;
@@ -32,12 +140,14 @@ body {
 .section {
   position: relative;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 section img {
   max-width: 50%;
+  min-width: 50%;
   max-height: 85vh;
+  min-height: 85vh;
   border-radius: 20px;
 }
 
