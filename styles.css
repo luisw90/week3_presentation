@@ -143,7 +143,7 @@ span {
   margin-top: 50px;
 }
 
-section img {
+.memeImage {
   max-width: 50%;
   min-width: 50%;
   max-height: 85vh;
@@ -154,5 +154,6 @@ section img {
 div img {
   max-width: 50%;
   max-height: 85vh;
+  border-radius: 20px;
 }
 
