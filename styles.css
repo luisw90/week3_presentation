@@ -146,14 +146,14 @@ span {
 .section {
   position: relative;
   text-align: center;
-  margin-top: 50px;
+  margin: 50px;
 }
 
 .memeImage {
   max-width: 50%;
   min-width: 50%;
-  max-height: 80vh;
-  min-height: 80vh;
+  max-height: 75vh;
+  min-height: 75vh;
   border-radius: 20px;
 }
 
@@ -198,17 +198,21 @@ div img {
 #next {
   right: 250px;
   border-radius: 3px 0 0 3px;
+  position: static;
+  display: inline;
 }
 
 #prev {
   left: 250px;
   border-radius: 3px 0 0 3px;
+  position: static;
+  display: inline;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 #prev:hover,
 #next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* Modal */
@@ -255,4 +259,5 @@ div img {
 }
 .kata-caption {
   font-size: 2rem;
+  margin-bottom: 20px;
 }
