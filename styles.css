@@ -8,6 +8,8 @@ body {
   background-color: #ADD7F6;
 }
 
+
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -20,14 +22,17 @@ body {
 
 h1 {
   background-color: rgba(256,256,256,.03);
-  
-  font-size: 2em;
+  font-size: 3em;
   font-family: 'Amethysta', serif;
   text-align: center;
   line-height: 1.4em;
   text-transform: uppercase;
   letter-spacing: .3em;
   white-space:nowrap;
+}
+
+p {
+  font-size: 1.5em;
 }
 
 span {
@@ -147,28 +152,28 @@ span {
 .memeImage {
   max-width: 50%;
   min-width: 50%;
-  max-height: 85vh;
-  min-height: 85vh;
+  max-height: 80vh;
+  min-height: 80vh;
   border-radius: 20px;
 }
 
 div img {
   max-width: 50%;
-  max-height: 85vh;
+  max-height: 80vh;
   border-radius: 20px;
 }
 
 #get-image-btn {
-  background-color: #c17c74;
+  background-color: #123587;
   color: #ede7e3;
   padding: 15px 19px;
   font-size: 24px;
   font-weight: 500;
   border: #ede7e3;
   border-radius: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 50px;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 /* Slideshow */
@@ -206,9 +211,7 @@ div img {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-
 /* Modal */
-
 #meme-modal {
   display: none;
   position: fixed;
@@ -223,12 +226,12 @@ div img {
   border-radius: 5px;
   width: 85%;
   height: 85%;
-  background-color: #c17c74;
+  background-color: #123587;
 }
 
 .meme-modal {
-  max-width: 340px;
-  max-height: 420px;
+  min-width: 40vw;
+  min-height: 40vh;
   border-radius: 5px;
 }
 
@@ -249,4 +252,7 @@ div img {
   color: white;
   background-color: #bd301d;
   border: 2px solid #bd301d;
+}
+.kata-caption {
+  font-size: 2rem;
 }
